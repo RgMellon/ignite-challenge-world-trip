@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 import { Header } from "../components/Header";
 import { Categories } from "../components/Categories";
@@ -19,6 +19,11 @@ export default function Home() {
         <Categories />
 
         <Separator />
+
+        <Box align="center" mt="52px" fontSize="36px" fontWeight="500">
+          <Text>Vamos nessa?</Text>
+          <Text>Então escolha seu continente</Text>
+        </Box>
 
       </Flex>
     </Flex>
