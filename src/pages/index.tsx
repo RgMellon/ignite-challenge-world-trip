@@ -3,6 +3,7 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import { Categories } from "../components/Categories";
 import { Separator } from "../components/Separator";
+import { Carousel } from "../components/Carousel";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
           <Text>Então escolha seu continente</Text>
         </Box>
 
+        <Carousel />
+        
       </Flex>
     </Flex>
   );
