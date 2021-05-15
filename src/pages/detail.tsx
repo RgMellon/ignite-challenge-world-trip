@@ -1,14 +1,14 @@
-import React from "react";
-
 import { Flex, SimpleGrid, Box, Text, theme } from "@chakra-ui/react";
 
-import { Countries } from "../components/Countries";
-
+import { Header } from "../components/Header";
 import { Info } from "../components/Info";
+import { Countries } from "../components/Countries";
 
 export default function Detail() {
   return (
     <Flex direction="column" h="100vh">
+      <Header/>
+
       <Box
         pos="relative"
         h="500px"
@@ -40,7 +40,7 @@ export default function Detail() {
         </Flex>
       </Box>
 
-      <Flex w="100%" maxWidth={1160} mx="auto">
+      <Flex w="100%" maxWidth={1160} mx="auto" direction="column">
         <SimpleGrid flex="1" spacing="70px" mt="80px" minChildWidth="320px">
           <Box>
             <Text fontSize="24px" color="gray.700">
