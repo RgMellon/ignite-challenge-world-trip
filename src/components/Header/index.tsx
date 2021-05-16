@@ -6,16 +6,16 @@ export function Header() {
       as="header"
       w="100%"
       maxWidth={1160}
-      h="100px"
+      h={["60px", "100px"]}
       mx="auto"
       px="6"
       align="center"
       justify="center"
     >
       <Image 
-        boxSize="150px" 
+        boxSize={["100px", "150px"]} 
         src="logo.svg" 
-        alt="world trip logotipo" 
+        alt="world trip" 
       />
     </Flex>
   );

@@ -10,11 +10,16 @@ export default function Home() {
     <Flex direction="column" h="100vh">
       <Header/>
 
-      <Image
-        objectFit="cover"
-        src="banner.svg"
-        alt="A Banner with a plain flying"
-      />
+      <Box
+        w="100%"
+        h={["400px", "auto"]}
+      >
+        <Image
+          boxSize="100%"
+          src="banner.svg"
+          alt="A Banner with a plain flying"
+        />
+      </Box>
 
       <Flex direction="column" w="100%" my="80px" maxWidth={1160} mx="auto">
         <Categories />

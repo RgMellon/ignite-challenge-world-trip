@@ -1,4 +1,4 @@
-import { SimpleGrid, Text} from "@chakra-ui/react";
+import { SimpleGrid, Text, useBreakpointValue} from "@chakra-ui/react";
 
 import { Card } from "./Card";
 
@@ -42,10 +42,17 @@ const countries = [
   },
 ] as CountryProps[];
 
-export function Countries() {
+export function Countries() {  
   return (
     <>
-      <Text mt="85px" fontWeight="500" fontSize="36px">Cidades +100</Text>
+      <Text 
+        mt="85px" 
+        fontWeight="500" 
+        fontSize="36px"
+        textAlign={['center', 'initial']}
+      >
+        Cidades +100
+      </Text>
       
       <SimpleGrid minChildWidth="256px" spacing="40px" mt="55px" >
         {countries.map(country => 

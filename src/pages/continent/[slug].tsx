@@ -1,17 +1,17 @@
 import { Flex, SimpleGrid, Box, Text, theme } from "@chakra-ui/react";
 
-import { Header } from "../components/Header";
-import { Info } from "../components/Info";
-import { Countries } from "../components/Countries";
+import { Header } from "../../components/Header";
+import { Info } from "../../components/Info";
+import { Countries } from "../../components/Countries";
 
-export default function Detail() {
+export default function Continent() {
   return (
     <Flex direction="column" h="100vh">
       <Header/>
 
       <Box
         pos="relative"
-        h="500px"
+        h={['350px', "500px"]}
         bg="rgba(0,0,0,0.4)"
         _after={{
           content: '""',
@@ -26,7 +26,13 @@ export default function Detail() {
           opacity: 0.6,
         }}
       >
-        <Flex w="100%" h="500px" maxWidth={1160} mx="auto" align="flex-end">
+        <Flex 
+          w="100%" 
+          h={['350px', "500px"]}
+          maxWidth={1160} 
+          mx="auto" 
+          align="flex-end"
+        >
           <Text
             fontWeight="900"
             mb="60px"
@@ -34,16 +40,25 @@ export default function Detail() {
             zIndex="banner"
             position="absolute"
             color="gray.300"
+            paddingLeft={["4", "0"]}
+            paddingRight={["4", "0"]}
           >
             Europa
           </Text>
         </Flex>
       </Box>
 
-      <Flex w="100%" maxWidth={1160} mx="auto" direction="column">
-        <SimpleGrid flex="1" spacing="70px" mt="80px" minChildWidth="320px">
+      <Flex 
+        w="100%" 
+        maxWidth={1160} 
+        mx="auto" 
+        direction="column" 
+        paddingLeft={["4", "0"]}
+        paddingRight={["4", "0"]}
+      >
+        <SimpleGrid flex="1" spacing="70px" mt={["30px", "80px"]} minChildWidth="320px">
           <Box>
-            <Text fontSize="24px" color="gray.700">
+            <Text fontSize={["18px", "24px"]} color="gray.700">
               A Europa é, por convenção, um dos seis continentes do mundo.
               Compreendendo a península ocidental da Eurásia, a Europa
               geralmente divide-se da Ásia a leste pela divisória de águas dos

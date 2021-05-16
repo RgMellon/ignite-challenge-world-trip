@@ -9,8 +9,8 @@ export function Item({ title, image }: ItemProps) {
   return (
     <Box justify="center" align="center">
       <Image 
-        w="85px" 
-        height="85px" 
+        w={["40px", "85px"]}
+        h={["40px", "85px"]}
         src={image} 
         alt={title}
       />

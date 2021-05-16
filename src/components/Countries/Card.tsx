@@ -10,8 +10,8 @@ type CardProps = {
 export function Card({city, country, flag, image}: CardProps) {
   return (
     <Box 
-      w="255px"
-      h="279px"
+      w={['100%', "255px"] }
+      h={['auto', '279px']} 
       bg="gray.50"
       justify="center" 
       borderRadius="4px"
@@ -20,7 +20,7 @@ export function Card({city, country, flag, image}: CardProps) {
     >
       <Box 
         w="100%"
-        h="173px" 
+        h={['auto', '173px']} 
       >
         <Image
           objectFit="cover"
